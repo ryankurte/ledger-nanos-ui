@@ -1,0 +1,16 @@
+[package]
+name = "nanos_ui_macros"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "1.0.99"
+quote = "1.0.21"
+proc-macro2 = "1.0.43"
+anyhow = "1.0.64"
+darling = "0.14.1"
+
+nanos_ui_traits = { version = "0.1.0", path = "../traits" }

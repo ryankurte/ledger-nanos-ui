@@ -414,3 +414,28 @@ impl<'a> MessageScroller<'a> {
         }
     }
 }
+
+use nanos_ui_macros::Menu;
+use nanos_ui_traits::{Menu as _};
+
+
+#[derive(Debug, Menu)]
+enum TestUi {
+    Hello,
+    Something(u64),
+}
+
+#[cfg(test)]
+mod test {
+
+
+
+    #[test]
+    fn test_ui_derive() {
+    
+
+
+    }
+
+
+}
